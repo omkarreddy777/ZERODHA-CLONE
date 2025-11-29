@@ -1,0 +1,140 @@
+/* Default font & reset */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
+}
+
+/* ------------ NAVBAR SPACING ------------ */
+.nav-link {
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* ------------ SUPPORT HERO PAGE ------------ */
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+  padding-bottom: 10px;
+}
+
+/* TOP BAR ROW */
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+#supportHero a {
+  color: white;
+  text-decoration: none;
+}
+
+#supportHero input {
+  padding: 15px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #supportWrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 10px;
+  }
+}
+
+/* ------------ AUTH PAGES ------------ */
+.auth-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.auth-box {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #387ed1;
+  box-shadow: 0 0 0 2px rgba(56,126,209,0.2);
+}
+
+.btn-auth {
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-auth:hover {
+  background: #333;
+}
+
+.msg {
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ------------ MOBILE OPTIMIZATIONS ------------ */
+
+@media (max-width: 768px) {
+  h1, .fs-2 {
+    font-size: 22px !important;
+  }
+  h3, .fs-5 {
+    font-size: 16px !important;
+  }
+  .container, .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
